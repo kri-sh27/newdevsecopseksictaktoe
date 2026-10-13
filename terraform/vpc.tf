@@ -34,6 +34,6 @@ module "vpc" {
   }
 
   tags = {
-    Project = "tic-tak-toe"
+    Project = "tic-tac-toe"
   }
 }

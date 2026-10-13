@@ -20,7 +20,7 @@ module "eks" {
 
       selectors = [
         {
-          namespace = "tic-tak-toe"
+          namespace = "tic-tac-toe"
         }
       ]
 
@@ -32,7 +32,10 @@ module "eks" {
 
       selectors = [
         {
-          namespace = "tic-tak-toe"
+          namespace = "kube-system"
+          labels = {
+            "k8s-app" = "kube-dns"
+          }
         }
       ]
 
@@ -55,6 +58,6 @@ module "eks" {
   }
 
   tags = {
-    Project = "tic-tak-toe"
+    Project = "tic-tac-toe"
   }
 }

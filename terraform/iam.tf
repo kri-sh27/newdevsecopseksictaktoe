@@ -106,7 +106,7 @@ resource "aws_iam_policy" "alb_controller" {
   policy = data.aws_iam_policy_document.aws_load_balancer_controller.json
 
   tags = {
-    Project = "tic-tak-toe"
+    Project = "tic-tac-toe"
   }
 }
 
