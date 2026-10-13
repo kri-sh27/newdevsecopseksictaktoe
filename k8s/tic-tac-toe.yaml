@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: tic-tac-toe
-          image: public.ecr.aws/l6m2t8p7/docker-2048:latest
+          image: 929897439921.dkr.ecr.ap-south-1.amazonaws.com/tic-tak-toe:latest
 
           ports:
             - containerPort: 80

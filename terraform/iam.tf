@@ -106,7 +106,7 @@ resource "aws_iam_policy" "alb_controller" {
   policy = data.aws_iam_policy_document.aws_load_balancer_controller.json
 
   tags = {
-    Project = "eks-2048"
+    Project = "tic-tak-toe"
   }
 }
 
@@ -154,7 +154,7 @@ resource "aws_iam_role" "alb_controller" {
   assume_role_policy = data.aws_iam_policy_document.alb_controller_assume_role.json
 
   tags = {
-    Project = "eks-2048"
+    Project = "tic-tak-toe"
   }
 
   depends_on = [

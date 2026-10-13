@@ -20,7 +20,7 @@ module "eks" {
 
       selectors = [
         {
-          namespace = "game-2048"
+          namespace = "tic-tak-toe"
         }
       ]
 
@@ -32,7 +32,7 @@ module "eks" {
 
       selectors = [
         {
-          namespace = "kube-system"
+          namespace = "tic-tak-toe"
         }
       ]
 
@@ -55,6 +55,6 @@ module "eks" {
   }
 
   tags = {
-    Project = "eks-2048"
+    Project = "tic-tak-toe"
   }
 }
